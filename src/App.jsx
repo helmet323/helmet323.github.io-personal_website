@@ -13,7 +13,7 @@ import ConnectTheShots from './assets/ConnectTheShots.png';
 // Quick updates for website
 const lastModifiedDate = 'September 10, 2023';
 const introduction =
-  'My name is Tommy. I am a student, currently in my 2nd year ofstudy at the University of Waterloo majoring in computer science. Here, you can check out all the cool projects that I have made throughout my journey.';
+  'My name is Tommy. I am a student, currently in my 2nd year of study at the University of Waterloo majoring in computer science. Here, you can check out all the cool projects that I have made throughout my journey.';
 const about =
   'In the past, I worked with Unity to create simple indie games with a couple of friends. We developed many, many game concepts and assets. Though not all ideas came to life, we gain experience working as a team. More recently, I have been studying the development of website and learning about all the different tools to build a interactive website.';
 const projects = [
@@ -45,20 +45,23 @@ const projects = [
   },
 ];
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home introduction={introduction} />,
-  },
-  {
-    path: '/about',
-    element: <About about={about} />,
-  },
-  {
-    path: '/work',
-    element: <Work projects={projects} />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Home introduction={introduction} />,
+    },
+    {
+      path: '/about',
+      element: <About about={about} />,
+    },
+    {
+      path: '/work',
+      element: <Work projects={projects} />,
+    },
+  ],
+  { basename: '/personal_website' }
+);
 
 function App() {
   return (
