@@ -1,7 +1,7 @@
 {
   "homepage": "https://helmet323.github.io/personal_website",
   "name": "website",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
