@@ -45,23 +45,20 @@ const projects = [
   },
 ];
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <Home introduction={introduction} />,
-    },
-    {
-      path: '/about',
-      element: <About about={about} />,
-    },
-    {
-      path: '/work',
-      element: <Work projects={projects} />,
-    },
-  ],
-  { basename: '/personal_website' }
-);
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home introduction={introduction} />,
+  },
+  {
+    path: '/about',
+    element: <About about={about} />,
+  },
+  {
+    path: '/work',
+    element: <Work projects={projects} />,
+  },
+]);
 
 function App() {
   return (

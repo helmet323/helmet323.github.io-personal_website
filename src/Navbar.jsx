@@ -47,13 +47,13 @@ function Navbar() {
             </a>
           </Box>
 
-          <a href='/personal_website/' style={{ color: 'inherit' }}>
+          <a href='/' style={{ color: 'inherit' }}>
             Home
           </a>
-          <a href='/personal_website/about' style={{ color: 'inherit' }}>
+          <a href='/about' style={{ color: 'inherit' }}>
             About
           </a>
-          <a href='/personal_website/work' style={{ color: 'inherit' }}>
+          <a href='/work' style={{ color: 'inherit' }}>
             Work
           </a>
         </Box>
